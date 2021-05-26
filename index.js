@@ -46,3 +46,14 @@ function read2(){
 
     }
 }
+document.getElementById("teendande").onclick = open;
+document.getElementById("cross").onclick = close;
+function open(){
+    console.log(`i got executed`)
+    document.getElementById("menu").style.display="block";
+
+}
+function close(){
+    document.getElementById("menu").style.display="none";
+    
+}
