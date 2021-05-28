@@ -27,6 +27,7 @@
 
     <link href="./icons/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <title>FLASH</title>
   </head>
@@ -47,10 +48,22 @@
     
       <h2>HEADING-1</h2>
       <div class="box1">
-      <img
-        src="./images/AAAABanYNbsz4mUmmKIoLyPFvhyBroh_6obZ8uzuJcfJZ_9BD5RBWd9XETDrEColhAcsC7XeOBsqdAH0VlUIiOpVSuDfBF67.jpg"
-        class="img"
-      />
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/AAAABanYNbsz4mUmmKIoLyPFvhyBroh_6obZ8uzuJcfJZ_9BD5RBWd9XETDrEColhAcsC7XeOBsqdAH0VlUIiOpVSuDfBF67.jpg" />
+            </div>
+           
+            <div class="swiper-slide">
+              <img src="./images/2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/head.png" />
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
         asperiores alias sint molestiae, laboriosam ipsam debitis, in officiis
@@ -87,7 +100,22 @@
     
       <h2>HEADING-2</h2>
       <div class="box2">
-      <img src="./images/2.jpg" class="img" />
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/head.png" />
+            </div>
+           
+            <div class="swiper-slide">
+              <img src="./images/AAAABanYNbsz4mUmmKIoLyPFvhyBroh_6obZ8uzuJcfJZ_9BD5RBWd9XETDrEColhAcsC7XeOBsqdAH0VlUIiOpVSuDfBF67.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/2.jpg" />
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        </div>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates,
         facilis. Dignissimos facilis, consequuntur dolore earum hic deserunt ea
@@ -123,7 +151,22 @@
     
       <h2>HEADING-3</h2>
       <div class="box3">
-      <img src="./images/3.jpg" class="img" />
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/2.jpg" />
+            </div>
+           
+            <div class="swiper-slide">
+              <img src="./images/AAAABanYNbsz4mUmmKIoLyPFvhyBroh_6obZ8uzuJcfJZ_9BD5RBWd9XETDrEColhAcsC7XeOBsqdAH0VlUIiOpVSuDfBF67.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/head.png" />
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
         perspiciatis suscipit explicabo! Amet voluptates non aspernatur
@@ -156,7 +199,24 @@
         </button>
       </p>
     </div>
+    
 <footer><p>© designed by GOKUL KAPOOR</p></footer>
     <script src="index.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script> 
   </body>
 </html>

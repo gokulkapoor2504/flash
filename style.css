@@ -102,6 +102,17 @@ footer{
     margin-top: 150px;
 }
 
+.swiper-container mySwiper{height: 350px;
+    }
+.swiper-wrapper{
+    height: auto;
+    width:97%;
+}
+
+.swiper-slide img{
+    height: auto;
+    width:97%;
+}
 
 @media screen and (max-width:600px){
 header{
